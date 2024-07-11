@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blur Options</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    label, input { display: block; margin-bottom: 10px; }
-    button { padding: 10px 15px; }
-  </style>
+    <title>Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Blur Options</h1>
-  <label for="channels">Channels to Blur (comma separated):</label>
-  <input type="text" id="channels" placeholder="e.g., ChannelName1, ChannelName2">
-  <button id="save">Save</button>
-  <script src="options.js"></script>
+<h1>Options</h1>
+<form id="form_block_channels">
+    <label for="channels">Channels to Block Spoilers from :</label>
+    <input type="text" id="channels" placeholder="e.g., ChannelName1, ChannelName2">
+</form>
+<button id="save">Save</button>
+<h2>Blocked Channels:</h2>
+<p class="blocked-channels"></p>
+<div>
+
+</div>
+<script src="options.js"></script>
 </body>
 </html>
