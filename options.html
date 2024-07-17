@@ -19,17 +19,31 @@
     </style>
 </head>
 <body>
-<h1>Options</h1>
-<form id="form_block_channels">
-    <label for="channels">Channels to Block Spoilers from :</label>
-    <input type="text" id="channels" placeholder="e.g., ChannelName1, ChannelName2">
-</form>
-<button id="save">Save</button>
-<h2>Blocked Channels:</h2>
-<p class="blocked-channels"></p>
 <div>
-
+    <div>
+        <div style="float: left; max-width: 420px; width: 100%; margin-inline-end: 10px; padding-top: 5px">
+            <input type="text" value="" id="new-blocked-channel-input" placeholder="https://www.youtube.com/@Xplodeon" autocomplete="off">
+        </div>
+        <div style="float: left; padding: 5px 0 10px">
+            <button id="add_channel_button" type="submit" class="ui-button ui-corner-all ui-widget"><span
+                    class="ui-button-icon ui-icon ui-icon-plus"></span><span class="ui-button-icon-space"> </span><span
+                    class="i18n_add_domain_button">Add domain</span></button>
+        </div>
+    </div>
+    <div style="clear: both; overflow: hidden">
+        <div style="float: left; max-width: 420px; width: 100%; margin-inline-end: 10px; padding-top: 5px">
+            <select id="blocked-select" size="10" multiple="">
+                 <option value="https://www.youtube.com/@channel2">Channel 2</option>
+            </select>
+        </div>
+        <div style="float: left; padding-top: 5px">
+            <button id="remove-disabled-channels" class="ui-button ui-corner-all ui-widget"><span
+                    class="ui-button-icon ui-icon ui-icon-minus"></span><span class="ui-button-icon-space"> </span><span
+                    class="i18n_remove_button">Remove selected</span></button>
+        </div>
+    </div>
 </div>
+
 <script src="options.js"></script>
 </body>
 </html>
