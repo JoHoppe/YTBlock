@@ -2,5 +2,6 @@
   "name": "youtubeblock",
   "version": "1.0.0",
   "dependencies": {
+    "@picocss/pico": "^2.0.6"
   }
 }
