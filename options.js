@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isYoutubeChannelUrl(channelUrl)) {
             // Fetch existing channels, add the new one, and save
-            chrome.storage.sync.get(['channels'], (result) => {
+            chrome.storage.sync.get(['channels'], (result
+
+            ) => {
                 let channels = result.channels || [];
                 if (!Array.isArray(channels)) {
                     channels = [];
